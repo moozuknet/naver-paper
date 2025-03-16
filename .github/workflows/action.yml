@@ -27,7 +27,7 @@ jobs:
         echo "[default]" > ~/.naver/credentials
         echo "username = " $USERNAME >> ~/.naver/credentials
         echo "password = " $PASSWORD >> ~/.naver/credentials
-        python run_new.py
+        python run_new.py -i moozuknet -p Wnsldi22@@
       env:
         USERNAME: ${{ secrets.USERNAME }} # secret에 저장된 내용을 불러옴
         PASSWORD: ${{ secrets.PASSWORD }}
