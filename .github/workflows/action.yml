@@ -23,8 +23,6 @@ jobs:
         pip install -r requirements.txt
     - name: Run
       run: |
-        echo $USERNAME
-        echo $PASSWORD
         mkdir -p ~/.naver
         echo "[default]" > ~/.naver/credentials
         echo "username = " $USERNAME >> ~/.naver/credentials
